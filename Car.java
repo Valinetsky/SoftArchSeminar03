@@ -1,13 +1,13 @@
 //методы: движение, обслуживание, переключение передач, включение фар дворников.
 
-public abstract class Car implements iCar {
-	protected String mark, model, color, exter;
+public abstract class Car {private String mark, model, color, exter;
 	private Fuel_Type fuel_type;
 	private Gearbox_Type gearbox;
-	protected int num_wheels;
-	protected double vol_eng;
+	private int num_wheels;
+	private double vol_eng;
 
 	private boolean light_on = false;
+	private boolean wipers_on = false;
 
 	/**
 	 * @param mark       - марка производителя (Toyota, Москвич, …)
@@ -19,9 +19,15 @@ public abstract class Car implements iCar {
 	 * @param num_wheels - число колес
 	 * @param vol_eng    - объем двигателя
 	 */
-	public Car(String mark, String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox,
-			int num_wheels,
-			double vol_eng) {
+	public Car(
+		String mark, 
+		String model, 
+		String color, 
+		String exter, 
+		Fuel_Type fuel_type, 
+		Gearbox_Type gearbox,
+		int num_wheels,
+		double vol_eng) {
 		this.mark = mark;
 		this.model = model;
 		this.color = color;
@@ -31,27 +37,30 @@ public abstract class Car implements iCar {
 		this.num_wheels = num_wheels;
 		this.vol_eng = vol_eng;
 	}
-
+	
+	// метод ДВИЖЕНИЕ
 	protected String movement() {
-		return "";
+		return "moving";
 	}
 
+	// метод ОБСЛУЖИВАНИЕ
 	protected String service() {
 		return "";
 	}
 
+	// метод ПЕРЕКЛЮЧЕНИЕ ПЕРЕДАЧ
 	public void changeGearbox(String gearbox_mode) {
 	}
 
-	@Override
-	public boolean isSweepingStreet(boolean isSweeping) {
-		return false;
+	// метод ВКЛЮЧЕНИЯ/ВЫКЛЮЧЕНИЯ ФАР
+	public boolean turnLights(boolean light_on) {
+		light_on = !light_on;
+		return light_on;
 	}
 
-	@Override
-	public boolean turnLights(boolean is_light) {
-		is_light = !is_light;
-		return is_light;
+	// метод ВКЛЮЧЕНИЯ/ВЫКЛЮЧЕНИЯ ДВОРНИКОВ
+	public boolean turnWipers(boolean wipers_on) {
+		wipers_on = !wipers_on;
+		return wipers_on;
 	}
-
 }

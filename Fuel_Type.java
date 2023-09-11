@@ -1,3 +1,4 @@
 public enum Fuel_Type {
-	gasoline, diesel
+	GASOLINE, 
+	DIESEL, GASOLIN
 }

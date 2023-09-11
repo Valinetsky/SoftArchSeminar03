@@ -1,13 +1,17 @@
-public class Toyota extends Car {
+public class Tracktor extends StreetCleaningCar implements iFuelStation {
 
-	public Toyota(String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox, int num_wheels,
+	public Tracktor(String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox, int num_wheels,
 			double vol_eng) {
 		super("Toyota", model, color, exter, fuel_type, gearbox, num_wheels, vol_eng);
-		self.is_vecsicale = true;
+		this.cleaning_on = true;
 	}
 
-	public void isLight_on(boolean is_light) {
-		is_light = true;
+	public 
+
+	@Override
+	public void fuel_type() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'fuel_type'");
 	}
 }
 
