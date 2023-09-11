@@ -19,7 +19,8 @@ public abstract class Car implements iCar {
 	 * @param num_wheels - число колес
 	 * @param vol_eng    - объем двигателя
 	 */
-	public Car(String mark, String model, String color, String exter, String fuel_type, String gearbox, int num_wheels,
+	public Car(String mark, String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox,
+			int num_wheels,
 			double vol_eng) {
 		this.mark = mark;
 		this.model = model;
