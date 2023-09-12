@@ -1,3 +1,9 @@
+package classes;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+import interfaces.iFogLigths;
+import interfaces.iFreighter;
+
 public class CarFogFreight extends Car implements iFogLigths, iFreighter {
 	public boolean foglights_on = false;
 	public boolean freight_on = false;

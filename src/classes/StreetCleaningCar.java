@@ -1,3 +1,7 @@
+package classes;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+
 /** Расширить абстрактный класс «Car», добавить метод: подметать улицу. */
 public class StreetCleaningCar extends Car {
 	public boolean cleaning_on = false;

@@ -1,14 +1,20 @@
-public class CarDiesel extends Car implements iFuelStation {
+package classes;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+import interfaces.iFuelStation;
 
-	public CarDiesel(String mark, String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox,
+public class CarGasoline extends Car implements iFuelStation {
+
+	public CarGasoline(String mark, String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox,
 			int num_wheels, double vol_eng) {
 		super(mark, model, color, exter, fuel_type, gearbox, num_wheels, vol_eng);
-		this.fuel_type = Fuel_Type.DIESEL;
+		this.fuel_type = Fuel_Type.GASOLINE;
+
 	}
 
 	@Override
 	public void refuel() {
-		System.out.println("Full tank of diesel fuel!");
+		System.out.println("Full tank of gasoline!");
 	}
 
 	@Override

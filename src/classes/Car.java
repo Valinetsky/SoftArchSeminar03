@@ -1,3 +1,8 @@
+package classes;
+
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+
 /**
  * Спроектировать абстрактный класс «Car» у которого должны быть свойства:
  * марка, модель, цвет, тип кузова, число колёс, тип топлива, тип коробки
@@ -47,7 +52,7 @@ public abstract class Car {
 	}
 
 	// метод ДВИЖЕНИЕ
-	protected String movement() {
+	public String movement() {
 		return "moving";
 	}
 

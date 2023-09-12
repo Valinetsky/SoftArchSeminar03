@@ -1,3 +1,7 @@
+package classes;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+
 public class FlyingCar extends Car {
 
 	public FlyingCar(String mark, String model, String color, String exter, Fuel_Type fuel_type, Gearbox_Type gearbox,
@@ -8,7 +12,7 @@ public class FlyingCar extends Car {
 	}
 
 	@Override
-	protected String movement() {
+	public String movement() {
 		return "flight";
 	}
 

@@ -1,4 +1,13 @@
-public class Main {
+import classes.CarDiesel;
+import classes.CarFogFreight;
+import classes.CarGasoline;
+import classes.FlyingCar;
+import classes.Sedan;
+import classes.StreetCleaningCar;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+
+public class App {
 	public static void main(String[] args) {
 		/**
 		 * Создать конкретный автомобиль путём наследования класса «Car».

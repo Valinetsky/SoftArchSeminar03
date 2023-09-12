@@ -1,3 +1,7 @@
+package classes;
+import enums.Fuel_Type;
+import enums.Gearbox_Type;
+
 public class FogLights extends Car {
     protected boolean foglights_on = false;
 
