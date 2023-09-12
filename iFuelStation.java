@@ -1,3 +1,3 @@
-public interface iFuelStation {
-	void fuel_type();
+public interface iFuelStation extends iWiping {
+	void refuel();
 }

@@ -1,10 +1,18 @@
-//методы: движение, обслуживание, переключение передач, включение фар дворников.
-
-public abstract class Car {private String mark, model, color, exter;
-	private Fuel_Type fuel_type;
-	private Gearbox_Type gearbox;
-	private int num_wheels;
-	private double vol_eng;
+/**
+ * Спроектировать абстрактный класс «Car» у которого должны быть свойства:
+ * марка, модель, цвет, тип кузова, число колёс, тип топлива, тип коробки
+ * передач, объём двигателя; методы: движение, обслуживание, переключение
+ * передач, включение фар, включение дворников.
+ */
+public abstract class Car {
+	protected String mark;
+	protected String model;
+	protected String color;
+	protected String exter;
+	protected Fuel_Type fuel_type;
+	protected Gearbox_Type gearbox;
+	protected int num_wheels;
+	protected double vol_eng;
 
 	private boolean light_on = false;
 	private boolean wipers_on = false;
@@ -20,14 +28,14 @@ public abstract class Car {private String mark, model, color, exter;
 	 * @param vol_eng    - объем двигателя
 	 */
 	public Car(
-		String mark, 
-		String model, 
-		String color, 
-		String exter, 
-		Fuel_Type fuel_type, 
-		Gearbox_Type gearbox,
-		int num_wheels,
-		double vol_eng) {
+			String mark,
+			String model,
+			String color,
+			String exter,
+			Fuel_Type fuel_type,
+			Gearbox_Type gearbox,
+			int num_wheels,
+			double vol_eng) {
 		this.mark = mark;
 		this.model = model;
 		this.color = color;
@@ -37,7 +45,7 @@ public abstract class Car {private String mark, model, color, exter;
 		this.num_wheels = num_wheels;
 		this.vol_eng = vol_eng;
 	}
-	
+
 	// метод ДВИЖЕНИЕ
 	protected String movement() {
 		return "moving";
@@ -62,5 +70,12 @@ public abstract class Car {private String mark, model, color, exter;
 	public boolean turnWipers(boolean wipers_on) {
 		wipers_on = !wipers_on;
 		return wipers_on;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [mark=" + mark + ", model=" + model + ", color=" + color + ", exter=" + exter + ", fuel_type="
+				+ fuel_type + ", gearbox=" + gearbox + ", num_wheels=" + num_wheels + ", vol_eng=" + vol_eng
+				+ ", light_on=" + light_on + ", wipers_on=" + wipers_on + "]";
 	}
 }
