@@ -20,18 +20,15 @@ public class CarGasoline extends Car implements iFuelStation {
 	@Override
 	public void wipWindshield() {
 		System.out.println("wipWindshield ON!");
-		throw new UnsupportedOperationException("Unimplemented method 'wipWindshield'");
 	}
 
 	@Override
 	public void wipHeadlights() {
 		System.out.println("wipHeadlights ON!");
-		throw new UnsupportedOperationException("Unimplemented method 'wipHeadlights'");
 	}
 
 	@Override
 	public void wipMirrors() {
 		System.out.println("wipMirrors ON!");
-		throw new UnsupportedOperationException("Unimplemented method 'wipMirrors'");
 	}
 }

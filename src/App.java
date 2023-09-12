@@ -16,6 +16,9 @@ public class App {
 		System.out.println("myCar1");
 		System.out.println(myCar1);
 
+        /**
+         * Расширить абстрактный класс «Car», добавить метод: подметать улицу. Создать конкретный автомобиль путём наследования класса «Car».
+         */
 		StreetCleaningCar myCar2 = new StreetCleaningCar("Cat", "buldozer", "yellow", "box", Fuel_Type.DIESEL,
 				Gearbox_Type.MT, 6, 12.7);
 
@@ -61,9 +64,7 @@ public class App {
 		CarGasoline myCar7 = new CarGasoline("Lada", "Kalina", "green", "sedan", Fuel_Type.DIESEL, Gearbox_Type.MT, 5,
 				1.5);
 
-		System.out.println("====================================");
-
-		System.out.println("====================================");
+		System.out.println();
 
 		System.out.println("myCar6.refuel");
 		myCar6.refuel();

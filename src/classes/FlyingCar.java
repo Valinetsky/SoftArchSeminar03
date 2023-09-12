@@ -11,9 +11,9 @@ public class FlyingCar extends Car {
 
 	}
 
+	// метод ДВИЖЕНИЕ
 	@Override
 	public String movement() {
 		return "flight";
 	}
-
 }
